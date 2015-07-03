@@ -2,6 +2,8 @@ package data;
 
 import java.util.ArrayList;
 
+import data.LesDag.Dag;
+
 public class Rooster {
 	public LesWeek lesweek;
 	ArrayList<Docent> docenten;
@@ -52,6 +54,10 @@ public class Rooster {
 		klassen.add(k2);
 		klassen.add(k3);
 		
+		lesweek = new LesWeek();
+		
+		LesDag maandag = new LesDag(Dag.Maandag);
+		lesweek.dagen.add(maandag);
 		
 		
 		
