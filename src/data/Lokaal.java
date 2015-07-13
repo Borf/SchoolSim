@@ -8,4 +8,9 @@ public class Lokaal {
 		this.naam = naam;
 	}
 
+	public String toString()
+	{
+		return "Klas " + naam;
+	}
+
 }

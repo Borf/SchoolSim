@@ -13,6 +13,10 @@ public class Klas {
 		studenten = new ArrayList<>();
 	}
 	
+	public String toString()
+	{
+		return "Klas " + naam;
+	}
 	
 	
 }

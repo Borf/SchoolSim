@@ -2,7 +2,7 @@ package data;
 import java.util.ArrayList;
 
 public class LesDag {
-	enum Dag { Maandag, Dinsdag, Woensdag, Donderdag, VrijdagO };
+	enum Dag { Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag };
 	public Dag dag;
 	
 	public LesDag(Dag dag)

@@ -8,7 +8,7 @@ import data.Rooster;
 public class SchoolSimFrame extends JFrame {
 	private static final long serialVersionUID = 4084558452621663337L;
 
-	Rooster rooster;
+	Rooster rooster = new Rooster();
 	
 	public SchoolSimFrame()
 	{

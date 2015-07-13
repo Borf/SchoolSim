@@ -2,14 +2,12 @@ package data;
 
 import java.util.ArrayList;
 
-import data.LesDag.Dag;
-
 public class Rooster {
-	public LesWeek lesweek;
-	ArrayList<Docent> docenten;
-	ArrayList<Student> studenten;
-	ArrayList<Klas> klassen;
-	ArrayList<Lokaal> lokalen;
+	public LesWeek lesweek = new LesWeek();
+	public ArrayList<Docent> docenten = new ArrayList<>();
+	public ArrayList<Student> studenten = new ArrayList<>();
+	public ArrayList<Klas> klassen = new ArrayList<>();
+	public ArrayList<Lokaal> lokalen = new ArrayList<>();
 	
 	
 	public Rooster()
@@ -40,6 +38,10 @@ public class Rooster {
 		studenten.add(new Student("Student 3D"));
 		studenten.add(new Student("Student 3E"));
 		studenten.add(new Student("Student 3F"));
+		
+		docenten.add(new Docent("Johan"));
+		docenten.add(new Docent("Pieter"));
+		docenten.add(new Docent("Paul"));
 	
 		Klas k1 = new Klas("Klas A", 1);
 		Klas k2 = new Klas("Klas A", 2);
@@ -54,13 +56,7 @@ public class Rooster {
 		klassen.add(k2);
 		klassen.add(k3);
 		
-		lesweek = new LesWeek();
-		
-		LesDag maandag = new LesDag(Dag.Maandag);
-		lesweek.dagen.add(maandag);
-		
-		
-		
+		lesweek.dagen.get(0).lessen.add(new Les("Programmeren Theorie", 1, 3, k1, lokalen.get(0), docenten.get(0)));
 		
 	}
 }
